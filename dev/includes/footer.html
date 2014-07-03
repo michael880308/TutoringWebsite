@@ -1,0 +1,31 @@
+	</div> <!-- #content-container -->
+	<footer class="container">
+		<p class="text-muted">&copy; 2014 Davis CS Club &middot; Tutoring Committee</p>
+	</footer>
+</div>	<!-- #page-container -->
+<!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Bootstrap Scripts -->
+<script src="js/bootstrap.min.js"></script>
+
+<?php
+	if(isset($enable_holder_js) and $enable_holder_js==true){
+		echo '<!-- Holder.js -->';
+		echo '<script src="js/holder.js"></script>';
+	}
+?>
+
+<!-- Neccessary for proper display in IE 11 on Windows Phone -->
+<script>
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  		var msViewportStyle = document.createElement('style')
+		
+		msViewportStyle.appendChild(document.createTextNode('@-ms-viewport{width:auto!important}'))
+ 	 	document.querySelector('head').appendChild(msViewportStyle)
+	}
+</script>
+
+<!-- Custom Scripts -->
+</body>
+</html>

@@ -1,0 +1,18 @@
+BEGIN;
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 10','Basic Concepts of Computing');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 12','Introduction to Media Computation');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 20','Discrete Mathematics for Computer Science');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 30','Programming and Problem Solving');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 40','Software Development and Object-Oriented Programming');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 50','Computer Organization and Machine-Dependent Programming');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 60','Data Structures and Programming');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 120','Theory of Computation');		
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 122A','Algorithm and Design');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 140A','Programming Languages');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 150','Operating Systems');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 154A','Computer Architecture');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 154B','Computer Architecture');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 165A','Database Systems');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 170','Artificial Intelligence');
+	INSERT INTO Courses(Name,FullName) VALUES('ECS 188','Ethics in an Age of Technology');
+COMMIT;

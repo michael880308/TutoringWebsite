@@ -1,0 +1,75 @@
+<?php 
+
+$basename = substr(strtolower(basename($_SERVER['PHP_SELF'])),0,strlen(basename($_SERVER['PHP_SELF']))-4);
+
+function isActive($page){
+	return $GLOBALS['basename']==$page;
+}
+
+?>
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<meta name="keywords" content="davis, computer science, tutoring committee" />
+	<meta name="description" content="Helping students find and express the most elegant solutions." />
+	<meta name="author" content="Davis Computer Science Club - Tutoring Committee" />
+	
+	<title>Davis Computer Science Club &middot; Tutoring Committee</title>
+	
+	<!-- Bootstrap Styles -->
+	<link href="css/bootstrap-3.1.1/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/bootstrap-3.1.1/bootstrap-theme.min.css" rel="stylesheet" />
+	<link href="css/bootstrap-3.1.1/bootstrap-glyphicons.css" rel="stylesheet" />
+	
+	<!-- Font Awesome Styles -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+		
+	<!-- Custom Styles -->
+	<link href="css/base.css" rel="stylesheet" />
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="page-container">
+	<div id="main-nav-container">
+		<nav class="nav navbar-default navbar-static-top" id="main-navbar" role="navigation">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle Nav</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Davis CS Club Tutoring</a>
+					</div> <!-- .navbar-header" -->
+					<div class="navbar-collapse collapse">
+						<!-- Left Menu -->
+						<ul class="nav navbar-nav">
+							<li<?php if(isActive('tutors')){ echo ' class="active"'; }?>><a href="tutors.html">Tutors</a></li>
+							<li<?php if(isActive('courses-covered')){ echo ' class="active"'; }?>><a href="courses-covered.html">Courses Covered</a></li>
+							<li<?php if(isActive('tutoring-schedule')){ echo ' class="active"'; }?>><a href="tutoring-schedule.html">Schedule</a></li>
+							<!-- <li><a href="resources.html">Resources</a></li> -->
+						</ul>
+						<!-- Right Menu -->
+						<ul class="nav navbar-nav navbar-right">
+							<li<?php if(isActive('about')){ echo ' class="active"'; }?>><a href="about.html">About</a></li>
+							<li><a href="http://www.cs.ucdavis.edu/">UC Davis CS</a></li>
+							<li><a href="http://www.daviscsclub.org/">Davis CS Club</a></li>
+						</ul>
+					</div> <!-- .navbar-collapse -->
+				</div> <!-- .container -->
+			</div> <!-- .navbar-inner -->
+		</nav> <!-- #main-navbar" -->
+	</div> <!-- #main-navigation-container -->
+	<div id="content-container" class="container">
